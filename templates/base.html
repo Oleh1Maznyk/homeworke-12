@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Туристичний сайт{% endblock %}</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <a href="{{ url_for('index') }}">Головна</a> |
+            <a href="{{ url_for('countries') }}">Країни</a> |
+            <a href="{{ url_for('contact') }}">Контакти</a>
+    </nav>
+    </div>
+    {% block content %}{% endblock %}
+</body>
+
+</html>

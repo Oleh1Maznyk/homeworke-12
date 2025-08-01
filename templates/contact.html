@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Зв’язок{% endblock %}
+
+{% block content %}
+<h2>Зв’яжіться з нами</h2>
+<form method="post">
+    <label>Ім’я:<br>
+        <input type="text" name="name" required>
+    </label><br><br>
+    <label>Повідомлення:<br>
+        <textarea name="message" required></textarea>
+    </label><br><br>
+    <button type="submit">Надіслати</button>
+</form>
+<br>
+<a href="{{ url_for('index') }}">
+    <button>Повернутись на головну</button>
+</a>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Цікаві країни{% endblock %}
+
+{% block content %}
+<h2>5 цікавих місць для подорожей:</h2>
+<ul>
+    {% for place in places %}
+    <li>{{ place }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
